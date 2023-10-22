@@ -8,20 +8,42 @@
     width: min(500px, 100%);
     height: min(500px, 100%);
     margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.head-wrapper{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 }
 .logo-img{
     margin: 2rem 0 0 0;
     width: 10rem;
 }
 .heading{
-    margin: 2rem 0 10rem 0;
+    margin: 2rem 0 2rem 0;
+    align-self: self-end;
 }
 .form-wrapper{
-    height: 5rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 .label-name{
     font-size: 18px;
+}
+.submit-btn{
+    cursor: pointer;
+    margin: 1rem 0 0 0;
+    width: 6rem;
+    height: 3rem;
+    font-size: 18px;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 12px;
+}
+.submit-btn:hover{
+    background-color: brown;
 }

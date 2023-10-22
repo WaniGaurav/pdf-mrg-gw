@@ -8,12 +8,15 @@
 </head>
 <body>
     <div class="container">
-        <img class="logo-img" src="./images/bg-img.png" alt="logo image">
-        <h1 class="heading">Welcome to PDF-mrg</h1>
-        <form method="post">
+        <div class="head-wrapper">
+            <img class="logo-img" src="./images/bg-img.png" alt="logo image">
+            <h1 class="heading">Welcome to PDF-mrg</h1>
+        </div>
+        <form method="post" action="/merge" enctype="multipart/form-data">
             <div class="form-wrapper">
                 <label for="pdfFiles" class="label-name">Select the PDF files for merging :</label>
-                <input type="file" class="file-input" id="pdfFiles">
+                <input type="file" name="pdfs" class="file-input" id="pdfFiles" multiple accept=".pdf">
+                <input class="submit-btn" type="submit" value="submit">
             </div>
         </form>
     </div>
